@@ -9,7 +9,7 @@ export const Dashboard = () => {
       titulo="Dashboard" 
       barraDeFerramentas={
         <FerramentasDeDetalhe 
-          mostrarBotaoSalvarEVoltar 
+          mostrarBotaoSalvarEFechar 
         />
       }
     >

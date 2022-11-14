@@ -7,19 +7,19 @@ interface IFerramentasDeDetalheProps {
   mostrarBotaoVoltar?: boolean;
   mostrarBotaoApagar?: boolean;
   mostrarBotaoSalvar?: boolean;
-  mostrarBotaoSalvarEVoltar?: boolean;
+  mostrarBotaoSalvarEFechar?: boolean;
 
   mostrarBotaoNovoCarregando?: boolean;
   mostrarBotaoVoltarCarregando?: boolean;
   mostrarBotaoApagarCarregando?: boolean;
   mostrarBotaoSalvarCarregando?: boolean;
-  mostrarBotaoSalvarEVoltarCarregando?: boolean;
+  mostrarBotaoSalvarEFecharCarregando?: boolean;
 
   aoClicarEmNovo?: () => void;
   aoClicarEmVoltar?: () => void;
   aoClicarEmApagar?: () => void;
   aoClicarEmSalvar?: () => void;
-  aoClicarEmSalvarEVoltar?: () => void;
+  aoClicarEmSalvarEFechar?: () => void;
 }
 
 export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
@@ -29,19 +29,19 @@ export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
   mostrarBotaoVoltar = true,
   mostrarBotaoApagar = true,
   mostrarBotaoSalvar = true,
-  mostrarBotaoSalvarEVoltar = false,
+  mostrarBotaoSalvarEFechar = false,
 
   mostrarBotaoNovoCarregando = false,
   mostrarBotaoVoltarCarregando = false,
   mostrarBotaoApagarCarregando = false,
   mostrarBotaoSalvarCarregando = false,
-  mostrarBotaoSalvarEVoltarCarregando = false,
+  mostrarBotaoSalvarEFecharCarregando = false,
 
   aoClicarEmNovo,
   aoClicarEmVoltar,
   aoClicarEmApagar,
   aoClicarEmSalvar,
-  aoClicarEmSalvarEVoltar,
+  aoClicarEmSalvarEFechar,
 
 }) => {
   const smDown = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
@@ -77,21 +77,21 @@ export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
         <Skeleton width={110} height={60} />
       )}
 
-      { (mostrarBotaoSalvarEVoltar && !mostrarBotaoSalvarEVoltarCarregando && !mdDown) && (
+      { (mostrarBotaoSalvarEFechar && !mostrarBotaoSalvarEFecharCarregando && !mdDown) && (
         <Button
           color="primary"
           disableElevation
           variant="outlined"
-          onClick={ aoClicarEmSalvarEVoltar }
+          onClick={ aoClicarEmSalvarEFechar }
           startIcon={<Icon>save</Icon>}
         >
           <Typography variant='button' whiteSpace='nowrap' textOverflow='ellipsis' overflow='hidden'>
-            Salvar e Voltar
+            Salvar e Fechar
           </Typography>
         </Button>
       )}
 
-      { (mostrarBotaoSalvarEVoltarCarregando && !mdDown) && (
+      { (mostrarBotaoSalvarEFecharCarregando && !mdDown) && (
         <Skeleton width={180} height={60} />
       )}
 
@@ -132,7 +132,7 @@ export const FerramentasDeDetalhe: React.FC<IFerramentasDeDetalheProps> = ({
       )}
       
       { (mostrarBotaoVoltar &&
-        (mostrarBotaoNovo || mostrarBotaoApagar || mostrarBotaoSalvar || mostrarBotaoSalvarEVoltar)
+        (mostrarBotaoNovo || mostrarBotaoApagar || mostrarBotaoSalvar || mostrarBotaoSalvarEFechar)
       ) && (
         <Divider variant='middle' orientation='vertical' />
       )}
