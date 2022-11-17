@@ -2,8 +2,33 @@
   "pessoas": [
     {
       "id": 1,
-      "nome": "Pablo",
-      "sobrenome": "Valença"
-    }
+      "email": "pvmovel@gmail.com",
+      "cidadeId": 1,
+      "nomeCompleto": "Pablo Valença"
+    },
+    {
+      "id": 2,
+      "email": "joao@gmail.com",
+      "cidadeId": 2,
+      "nomeCompleto": "João Carlos Silva"
+    },
+    {
+      "id": 3,
+      "email": "maria@gmail.com",
+      "cidadeId": 3,
+      "nomeCompleto": "Maria da Graça"
+    },
+    {
+      "id": 4,
+      "email": "jose@gmail.com",
+      "cidadeId": 4,
+      "nomeCompleto": "Jose Jorge"
+    },
+    {
+      "id": 5,
+      "email": "jesus@gmail.com",
+      "cidadeId": 1,
+      "nomeCompleto": "Jesus de Nazaré"
+    }    
   ]
 }
