@@ -91,12 +91,6 @@
       "nomeCompleto": "Jesus de Nazaré"
     },
     {
-      "id": 16,
-      "email": "zefinha@gmail.com",
-      "cidadeId": 5,
-      "nomeCompleto": "Zefinha Maria"
-    },
-    {
       "id": 17,
       "email": "chanel@gmail.com",
       "cidadeId": 3,
@@ -107,18 +101,6 @@
       "email": "rosalia@gmail.com",
       "cidadeId": 3,
       "nomeCompleto": "Rosália Valença"
-    },
-    {
-      "id": 19,
-      "email": "filipe@gmail.com",
-      "cidadeId": 2,
-      "nomeCompleto": "Filipe da Costa"
-    },
-    {
-      "id": 20,
-      "email": "josue@gmail.com",
-      "cidadeId": 1,
-      "nomeCompleto": "Josué de Arimateia"
-    }    
+    }
   ]
 }
